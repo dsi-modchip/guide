@@ -60,7 +60,7 @@ For the connections to the MOSFET, wait and do not connect these yet. Connect
 
 1. Find the decoupling capacitors of the main SoC on the motherboard. These ar
    on the side of the testpoints, and look like this:
-   ![](cpu_twl_rails.png)
+   ![](img/cpu_twl_rails.png)
    On a DSi, this photo is taken at the same orientation as the text. On a DSi
    XL, this is rotated by 90 degrees.
 2. Place the IRFHS8342 MOSFET close to these decoupling capacitors, upside-down
