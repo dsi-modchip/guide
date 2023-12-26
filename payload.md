@@ -19,6 +19,7 @@ exploit payload.
 ### Compiling
 
 1. Get the source code of the [exploit payload](https://github.com/dsi-modchip/payload)
+  * Do a recursive clone, the submodules are needed
 2. Run `make`
 
 ### Flashing - purpose-built modchip
