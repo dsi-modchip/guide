@@ -33,14 +33,11 @@ this file using your DFU flashing program of choice.
 ### Flashing - DIY modchip
 
 With a DIY modchip, two options are possible:
-* Wire up the SPI flash chip to the modchip (as detailed in the [next
-  chapter](./install.md)), and follow the steps for the purpose-built modchip.
-  * **OOPS**: this method isn't available yet for DIY modchips. Sorry.
 * Use an external SPI flash programmer, using `flashrom`.
 * Use an external SPI flash programmer using another program. You're on your
   own for that.
 
-For the second option: after connecting the external programmer, run the
+For the first option: after connecting the external programmer, run the
 following command: `FLASHROM_PRGM=<flashrom programmer setting> make flash`.
 Consult the [flashrom documentation](https://www.flashrom.org/) and maybe their
 [old wiki](https://wiki.flashrom.org/Flashrom) on what to fill in for the
@@ -52,6 +49,10 @@ are using.
   of `x`.
 * For pico-serprog, using Linux, use:
   `FLASHROM_PRGM=serprog:dev=/dev/ttyACMx:115200` for some value of `x`.
+
+> [!TIP]
+> A method of flashing the SPI memory directly using the modchip RP2040 is
+> planned. This will make this step as easy as for the purpose-built modchip.
 
 ## Next
 

@@ -7,10 +7,12 @@ This guide is ***not*** aimed at total beginners. If you only want to run
 custom software on your DSi, I suggest you try [this
 guide](https://dsi.cfw.guide/) first.
 
-***READ THIS GUIDE ALL THE WAY THROUGH BEFORE ATTEMPTING ANYTHING.***
+> [!IMPORTANT]
+> ***READ THIS GUIDE ALL THE WAY THROUGH BEFORE ATTEMPTING ANYTHING.***
 
-As everything is still very much a work in progress, the installation
-procedure is far from being the smoothest possible. Sorry about that.
+> [!NOTE]
+> As everything is still very much a work in progress, the installation
+> procedure is far from being the smoothest possible. Sorry about that.
 
 ## Why would I want this?
 
@@ -26,7 +28,7 @@ procedure is far from being the smoothest possible. Sorry about that.
 
 ## Why would I **not** want this?
 
-* One the pre-existing exploits (Memory Pit, Stylehax, Flipnote Lenny, Unlaunch)
+* One of the pre-existing exploits (Memory Pit, Stylehax, Flipnote Lenny, Unlaunch)
   or a flashcart suit all your needs.
 * You don't want to hardmod your DSi.
 * You can't solder --- hardmodding your DSi means you will have to solder.
@@ -39,8 +41,11 @@ Throughout this guide, you will need to:
   handling tiny SMT components. If you have never soldered using flux and
   tweezers, please do not attempt to install this modchip.
 * Compile software from source on your computer. This means you will need to
-  have a development environment installed. (*TODO: once the software is stable,
-  provide binary releases so this requirement can be relaxed.*)
+  have a development environment installed.
+
+> [!TIP]
+> Once the software is stable, binary releases will be provided so this second
+> requirement can be relaxed.
 
 ## Installation steps
 
