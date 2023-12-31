@@ -45,9 +45,10 @@ You will need:
 * A Raspberry Pi RP2040 devboard. Acceptable ones are:
   * Raspberry Pi Pico (**Non-W, Non-H!**)
   * Adafruit ItsyBitsy RP2040
-  * Seeed Xiao RP2040
+  * Seeed XIAO RP2040
   * WaveShare RP2040-Zero
   * WaveShare RP2040-Tiny
+  * WaveShare RP2040-One
 * A SPI flash chip, with the following requirements:
   * Compatible with a 3.3V supply
   * SPI interface (i.e. no I2C or parallel), 8 pins

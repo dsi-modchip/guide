@@ -22,11 +22,11 @@ Please follow the modchip-dependend guide:
 * [Raspberry Pico](./install/pico.md)
 * [Adafruit ItsyBitsy RP2040](./install/itsybitsy.md)
 * [Seeed XIAO RP2040](./install/xiao.md)
-* [WaveShare RP2040-Zero/Tiny](./install/waveshare.md)
+* [WaveShare RP2040-Zero/One/Tiny](./install/waveshare.md)
 
 ### Soldering the glitching MOSFET
 
-> [!CRITICAL]
+> [!CAUTION]
 > This is the difficult part. Do be really careful, don't set your soldering
 > iron too hot, or you *will* brick your console.
 

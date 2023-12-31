@@ -1,4 +1,4 @@
-# Modchip soldering guide: WaveShare RP2040-Zero/Tiny
+# Modchip soldering guide: WaveShare RP2040-Zero/Tiny/One
 
 ## Preparation
 
