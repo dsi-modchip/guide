@@ -36,17 +36,21 @@ Use the following pinout:
 |:--------------------- |:---- |:--------- |:---- |:--------- |:------- |
 | HAX                   | GP21 | GP25      | GP7  | GP14      | to glitch MOSFET gate |
 
-1. Find the decoupling capacitors of the main SoC on the motherboard. These ar
-   on the side of the testpoints, and look like this:
-   ![](img/cpu_twl_rails.png)
-   On a DSi, this photo is taken at the same orientation as the text. On a DSi
-   XL, this is rotated by 90 degrees.
+> [!TIP]
+> Use a microscope here. You'll most likely need one.
+
+1. Find the decoupling capacitors of the main SoC on the motherboard.
 2. Place the IRFHS8342 MOSFET close to these decoupling capacitors, upside-down
    (that is, with the metal pads/contacts pointing up). Glue the MOSFET in
    place, but do leave the metal contacts open to the air!
 3. Connect the positive side of *one* **1V2** decoupling cap to the drain (D)
    of the MOSFET (c.f. [MOSFET datasheet with pinout](https://www.infineon.com/dgdl/Infineon-IRFHS8342-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a401535623992e1f5f)).
    Use very thin enamel wire.
+> [!WARNING]
+> When a thin enamel wire travels over another component with bare
+> conducting surface (like a testpoint, untented via, or other capacitor),
+> add kapton tape over this obstructing component first before soldering the
+> wire. This ensures that no dangerous short-circuits can be created.
 4. Connect the negative side of *the same decoupling cap* to the source (S) of
    the MOSFET. Use very thin enamel wire.
 5. From the source (S) of the MOSFET, run a strand of enamel wire that is abou
@@ -65,6 +69,28 @@ Use the following pinout:
 > A flex-cable assembly (that has the IRFHS8342 MOSFET soldered onto it) is
 > planned, but not yet designed or fabricated. This will make the above much
 > easier. Though, for now you'll have to do it the hard way, sorry.
+
+A visual aid of the above steps is shown below:
+
+![](./img/crowbar-install.png)
+
+The following microscope photo shows the final assembly, but before step 10
+(i.e. without protective kapton tape cover):
+
+![](./img/mosfet-after-soldering.jpg)
+
+This image shows a detail of the previous photo, zoomed in on the MOSFET:
+
+![](./img/mosfet-detail.jpg)
+
+And this final image shows all the points where glue should be added. The
+enamel wires are fragile, and thus need to be secured in multiple places to
+relieve them of mechanical tension. Thicker and better-insulated wires need to
+be used for most of the signal path, hence the use of the spiraled ends filled
+with drops of solder, to which the thicker wires are attached. **Also fasten
+these thicker wires to the PCB using glue!**
+
+![](./img/glue-points.jpg)
 
 ## Glitch parameter training
 
